@@ -1,0 +1,304 @@
+body {
+    padding: 0 20px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #080808;
+    font-family: Arial, sans-serif;
+}
+
+/* Main box */
+
+.box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 380px;
+    padding: 45px 40px;
+    background: #101010;
+    border: 1px solid #252525;
+    border-radius: 20px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.6);
+    animation: show 0.7s ease;
+}
+
+.form h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.form p {
+    color: #777;
+    text-align: center;
+    margin: -10px 0 15px;
+    font-size: 14px;
+}
+
+/* Inputs */
+
+.email,
+.password,
+.username {
+    max-width: 380px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #292929;
+    outline: none;
+    background: #171717;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.email::placeholder,
+.password::placeholder,
+.username::placeholder {
+    color: #666;
+}
+
+.email:hover,
+.password:hover,
+.username:hover {
+    border-color: #555;
+}
+
+.email:focus,
+.password:focus,
+.username:focus {
+    border-color: #ff3030;
+    background: #1c1111;
+    box-shadow: 0 0 15px rgba(255, 30, 30, 0.12);
+}
+
+
+.btn,
+.login {
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.btn {
+    background: #ed2929;
+    color: white;
+    border: 1px solid #ed2929;
+    font-weight: bold;
+    margin-top: 5px;
+
+}
+
+.btn:hover {
+    background: #ff4141;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+.login {
+    background: #171717;
+    color: #aaa;
+    border: 1px solid #303030;
+}
+
+.login:hover {
+    color: white;
+    border-color: #ed2929;
+    background: #1d1111;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+
+.welcome {
+    width: 100%;
+    max-width: 650px;
+    background: #101010;
+    border: 1px solid #292929;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+    animation: show 0.7s ease;
+}
+
+.welcome_content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.welcome_label {
+    color: #ff3838;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.welcome_title {
+    color: white;
+    font-size: 42px;
+    margin: 0;
+}
+
+.welcome_text {
+    color: #888;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 500px;
+}
+
+
+.welcome_info {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.info_item {
+    flex: 1;
+    padding: 18px 12px;
+    background: #181818;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.info_item:hover {
+    border-color: #ed2929;
+    transform: translateY(-4px);
+}
+
+.info_title {
+    color: #ff3838;
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.info_text {
+    color: #aaa;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.welcome_buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.welcome_register,
+.welcome_login {
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.welcome_register {
+    background: #ed2929;
+    color: white;
+    border: 1px solid #ed2929;
+}
+
+.welcome_register:hover {
+    background: #ff4141;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.welcome_login {
+    background: #181818;
+    color: white;
+    border: 1px solid #333;
+}
+
+.welcome_login:hover {
+    border-color: #ed2929;
+    color: #ff3838;
+}
+
+.welcome_footer {
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0 0;
+}
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+.dash-title {
+
+    color: #ff3838;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+::selection {
+    background: #181818;
+    color: #ff3838;
+}
